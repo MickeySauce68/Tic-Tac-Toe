@@ -2,10 +2,30 @@ function theGame(){
   var GameOver = false;
   document.getElementById("disappear").style.display = "block";
   document.getElementById("main").style.display = "none";
+  changeTableColor();
   //while GameOver === false
 }
 
+// Function to change the table and cell border colors
+function changeTableLineColor() {
+  const table = document.getElementById('disappear'); // Replace with your table's ID
+  const cells = table.getElementsByTagName('td'); // Get all table cells
+  let colors = ['#FF5733', '#33FF57', '#5733FF', '#FFC300', '#33D4FF'];
 
+  // Pick a random color from the array
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+  // Change the table border color
+  table.style.borderColor = randomColor;
+
+  // Loop through each cell and change its border color
+  for (let cell of cells) {
+    cell.style.borderColor = randomColor;
+  }
+}
+
+// Add event listener to the whole document (change on any click)
+document.addEventListener('click', changeTableLineColor);
 
 
 
