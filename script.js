@@ -10,7 +10,7 @@ function theGame(){
 function changeTableLineColor() {
   const table = document.getElementById('disappear'); // Replace with your table's ID
   const cells = table.getElementsByTagName('td'); // Get all table cells
-  let colors = ['#FF5733', '#33FF57', '#5733FF', '#FFC300', '#33D4FF'];
+  let colors = ['#0d6efd', '#198754', '#dc3545', '#ffc107', '#0dcaf0'];
 
   // Pick a random color from the array
   const randomColor = colors[Math.floor(Math.random() * colors.length)];

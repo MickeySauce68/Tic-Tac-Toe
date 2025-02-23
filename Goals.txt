@@ -1,0 +1,2 @@
+I want the color of the Xs and Os to change when I click any button.
+I want their be star animations when a game begins and when a game ends.
